@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalized Firest letter</title>
+</head>
+<body>
+    <h1>Enter Value</h1>
+    <input type="text" id="f1">
+    <button onclick="fun()">Capitalized</button>
+    <p id="s1"></p>
+
+    <script>
+        function fun(){
+
+            let f1 = document.getElementById("f1").value;
+
+            let f2 = f1[0].toUpperCase()  + f1.slice(1);
+
+            document.getElementById("s1").innerHTML = f2;
+
+        }
+    </script>
+</body>
+</html>
